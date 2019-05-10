@@ -7,7 +7,12 @@ def my_all?(collection)
     return_values << yield(collection[i])
     i += 1 
   end
-  print return_values
+  return_values.each { |n| 
+    if n == "false"
+    false
+  else
+    true 
+  end
 end
 
 my_all?([1,2,3,4,5,6,7,8,9,10]) { |i| 
