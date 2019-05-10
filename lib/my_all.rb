@@ -7,7 +7,7 @@ def my_all?(collection)
     return_values << yield(collection[i])
     i += 1 
   end
-  return_values
+  puts return_values
 end
 
 my_all?([1,2,3,4,5,6,7,8,9,10]) { |i| i < 5 }
